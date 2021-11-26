@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from "react"
+
 
 function App() {
+
+  const [display, setdisplay] = useState("");
+
+  function btnTapped (value) {
+    setdisplay(display + value)
+  }
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="display">
+        {display ? display : 0}
+      </div>
+      <div className="keypad">
+      <button onClick={()=>btnTapped(1)}>1</button>
+      <button onClick={()=>btnTapped(2)}>2</button>
+      <button onClick={()=>btnTapped(3)}>3</button>
+      <button onClick={()=>btnTapped(4)}>4</button>
+      <button onClick={()=>btnTapped(5)}>5</button>
+      <button onClick={()=>btnTapped(6)}>6</button>
+      <button onClick={()=>btnTapped(7)}>7</button>
+      <button onClick={()=>btnTapped(8)}>8</button>
+      <button onClick={()=>btnTapped(9)}>9</button>
+
+
+      <button onClick={()=>btnTapped("+")}>+</button>
+      <button onClick={()=>btnTapped("-")}>-</button>
+      <button onClick={()=>btnTapped("*")}>*</button>
+      <button onClick={()=>btnTapped("/")}>/</button>
+
+      <button onClick={()=>btnTapped("=")}>=</button>
+      </div>
     </div>
   );
 }
