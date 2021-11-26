@@ -5,8 +5,18 @@ function App() {
 
   const [display, setdisplay] = useState("");
 
+
+  function parse(str) {
+    return Function(`'use strict'; return (${str})`)()
+  }
+  
+
   function btnTapped (value) {
     setdisplay(display + value)
+  }
+
+  function setEqual () {
+    setdisplay(Math.round(parse(display)));
   }
   
 
@@ -32,7 +42,7 @@ function App() {
       <button onClick={()=>btnTapped("*")}>*</button>
       <button onClick={()=>btnTapped("/")}>/</button>
 
-      <button onClick={()=>btnTapped("=")}>=</button>
+      <button onClick={()=>setEqual()}>=</button>
       </div>
     </div>
   );
