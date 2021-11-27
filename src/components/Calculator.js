@@ -12,7 +12,7 @@ export default function Calculator() {
     }
 
     function btnTapped(value) { 
-        if (operators.includes(display.slice(-1)) && operators.includes(value)){
+        if (operators.includes(display.toString().slice(-1)) && operators.includes(value)){
             console.log("Error!")
         }
 

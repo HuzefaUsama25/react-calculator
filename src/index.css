@@ -37,7 +37,7 @@ body {
 
 .keypad {
   display: grid;
-  grid-template-columns: 10em 10em 10em 10em;
+  grid-template-columns: 8em 8em 8em 8em;
   background-color: rgb(248, 246, 246);
   padding: 0.25em;
 }
@@ -51,7 +51,7 @@ button {
   border: 0.2rem solid rgb(236, 224, 224);
   background-color: rgb(226, 222, 222);
   text-align: center;
-  padding: 1em 0.5em;
+  padding: 1em;
   font-size: 30px;
   font-size: 2em;
   border-radius: 3em;
