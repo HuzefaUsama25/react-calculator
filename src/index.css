@@ -40,17 +40,20 @@ button:hover {
 }
 */
 
+.App {
+  display: inline-block;
+}
+
 .calculator {
   display: grid;
   margin-top: 20%;
-  width: 
-  
+  width: 30em;
 }
 
 .display {
   grid-template-columns: auto;
   background-color: rgb(177, 170, 170);
-  padding: 0.5em 149px;
+  padding: 0.5em 70px;
   font-size: 2em;
   text-align: right;
 
@@ -59,22 +62,23 @@ button:hover {
 
 .keypad {
   display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #ffffff;
-  padding: 0em;
+  grid-template-columns: 10em 10em 10em;
+  background-color: white;
+  padding: 0.25em;
 }
 
 
 button {
+  margin: 0.2em;
   appearance: none;
   text-decoration: none;
   border: none;
   background-color: white;
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
   font-size: 30px;
   font-size: 2em;
-  border-radius: 2em;
+  border-radius: 3em;
 }
 
 button:hover {
