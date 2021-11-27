@@ -15,7 +15,7 @@ body {
 }
 
 .App {
-  display: flex;
+  display: grid;
   justify-content: center;
   margin-top: 5%;
 }
