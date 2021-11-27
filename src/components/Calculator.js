@@ -4,8 +4,6 @@ import {useState} from 'react'
 export default function Calculator() {
     const [display, setdisplay] = useState("");
     const operators = ["+","-","*","/","."]
-    const digits = ["1","2","3","4","5","6","7","8","9","0"]
-
 
     function parse(str) {
         return eval(str)
