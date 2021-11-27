@@ -3,7 +3,7 @@ import { useState } from "react"
 
 function App() {
 
-  const [display, setdisplay] = useState(0);
+  const [display, setdisplay] = useState("");
 
 
   function parse(str) {
@@ -15,11 +15,11 @@ function App() {
   }
 
   function setEqual() {
-    setdisplay(Math.round(parse(display)));
+    setdisplay(Math.round(parse(display),1));
   }
 
   function clearDisplay() {
-    setdisplay("0")
+    setdisplay("")
   }
 
   function backspace() {
@@ -37,26 +37,24 @@ function App() {
           <button onClick={() => btnTapped(1)}>1</button>
           <button onClick={() => btnTapped(2)}>2</button>
           <button onClick={() => btnTapped(3)}>3</button>
+          <button className="addition operator" onClick={() => btnTapped("+")}>+</button>
           <button onClick={() => btnTapped(4)}>4</button>
           <button onClick={() => btnTapped(5)}>5</button>
           <button onClick={() => btnTapped(6)}>6</button>
+          <button className="subtraction operator" onClick={() => btnTapped("-")}>-</button>
           <button onClick={() => btnTapped(7)}>7</button>
           <button onClick={() => btnTapped(8)}>8</button>
           <button onClick={() => btnTapped(9)}>9</button>
-
+          <button className="multiplication operator" onClick={() => btnTapped("*")}>x</button>
           <button onClick={() => btnTapped(0)}>0</button>
+          <button className="clearC" onClick={() => clearDisplay()}>C</button>
+          <button className="clearCE" onClick={() => backspace()}>CE</button>
 
-          <button onClick={() => clearDisplay()}>C</button>
-          <button onClick={() => backspace()}>CE</button>
+
+          <button className="division operator" onClick={() => btnTapped("/")}>/</button>
           <button onClick={() => btnTapped(".")}>.</button>
 
-
-          <button onClick={() => btnTapped("+")}>+</button>
-          <button onClick={() => btnTapped("-")}>-</button>
-          <button onClick={() => btnTapped("*")}>*</button>
-          <button onClick={() => btnTapped("/")}>/</button>
-
-          <button onClick={() => setEqual()}>=</button>
+          <button className="equal operator" onClick={() => setEqual()}>=</button>
 
         </div>
       </div>
