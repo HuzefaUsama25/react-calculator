@@ -14,7 +14,7 @@ body {
   
 }
 
-
+/*
 .display {
   background-color: rgba(180, 166, 166, 0.616);
   padding: 0.3em;
@@ -37,4 +37,46 @@ button {
 button:hover {
   background-color: red;
   color: white;
+}
+*/
+
+.calculator {
+  display: grid;
+  margin-top: 20%;
+  width: 
+  
+}
+
+.display {
+  grid-template-columns: auto;
+  background-color: rgb(177, 170, 170);
+  padding: 0.5em 149px;
+  font-size: 2em;
+  text-align: right;
+
+}
+
+
+.keypad {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #ffffff;
+  padding: 0em;
+}
+
+
+button {
+  appearance: none;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 30px;
+  font-size: 2em;
+  border-radius: 2em;
+}
+
+button:hover {
+  background-color: red;
 }
