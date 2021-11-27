@@ -27,12 +27,12 @@ body {
 }
 
 .display {
-  grid-template-columns: auto;
   background-color: rgb(226, 216, 216);
+  color: rgba(255, 255, 255, 0.842);
   padding: 0.5em 70px;
   font-size: 3em;
   text-align: right;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .keypad {
@@ -43,7 +43,6 @@ body {
 }
 
 button {
-  /*color: rgba(253, 253, 253, 0.863);*/
   color: rgb(163, 157, 157);
   font-weight: 1000;
   margin: 0.2em 0.1em;
@@ -66,8 +65,8 @@ button:hover {
 
 .operator {
   color: white;
-  background-color: rgba(255, 0, 0, 0.719);
-  border: red;
+  background-color: rgba(255, 0, 0, 0.527);
+  border: rgba(255, 0, 0, 0.507);
 }
 
 .equal {
